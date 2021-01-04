@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'SanFrancisco';
-  src: url('./SFUIDisplay-Regular.ttf');
+  src: url('../fonts/SFUIDisplay-Regular.ttf');
 }
 
 html,
@@ -26,7 +26,7 @@ main {
 
   position: relative;
   /* margin-top: -60px; */
-  background-image: url('./img/home.jpg');
+  background-image: url('../img/home.jpg');
   background-position: center center;
   background-size: cover;
 }
