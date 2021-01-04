@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'SanFrancisco';
+  src: url('./SFUIDisplay-Medium.ttf');
+}
+
+body,
+.wrapper,
+main {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: 'SanFrancisco';
+}
+
+.pj {
+  display: grid;
+  grid-template-columns: fit-content(700px) fit-content(700px);
+  grid-auto-rows: 1fr;
+
+  /* grid-auto-flow: column dense; */
+
+  gap: 36px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.pj:nth-child(2n + 1) > .photo {
+  order: 2;
+}
+main:nth-child(2n + 1) > .disc {
+  order: 1;
+}
+
+.photo {
+  border: 1px solid red;
+  height: 200px;
+  width: 350px;
+}
+
+.disc {
+  border: 1px solid red;
+  min-height: 200px;
+  width: 100%;
+  min-width: 220px;
+  max-width: 700px;
+}
+
+@media (max-width: 550px) {
+  .photo {
+    order: 1;
+  }
+
+  .disc {
+    order: 2;
+  }
+}
