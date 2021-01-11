@@ -5,8 +5,7 @@
   overflow: hidden;
   position: relative;
   text-align: center;
-  /* cursor: default; */
-  cursor: pointer;
+  cursor: default;
 }
 
 .hovereffect .overlay {
@@ -72,6 +71,10 @@
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
+}
+
+a > .hovereffect {
+  cursor: pointer;
 }
 
 .hovereffect:hover a,
