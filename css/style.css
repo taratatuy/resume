@@ -23,14 +23,88 @@ main {
 .header {
   height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+
   position: relative;
   background-image: url('../img/home.jpg');
   background-position: center center;
   background-size: cover;
 }
 
+nav {
+  display: flex;
+}
+
+nav > div {
+  margin: 8px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* font-size: 16px;
+  font-weight: 400;
+  line-height: 1.57142857; */
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+nav > div:first-child {
+  flex-grow: 1;
+  justify-content: start;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+nav a > span {
+  margin-left: 5px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: minmax(1px, 300px) minmax(1px, 500px);
+  column-gap: 30px;
+  align-self: center;
+  justify-items: center;
+  align-items: center;
+
+  flex-grow: 1;
+  padding: 8px 12px 150px 12px;
+
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 1.57142857;
+}
+
+.info > img {
+  border-radius: 200px;
+}
+
+.info > .discription > h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .footer {
   height: 50px;
+}
+
+.caption {
+  border-bottom: solid 1px #e4eaec;
+  display: flex;
+  justify-content: center;
 }
 
 .pj {
@@ -107,6 +181,37 @@ main:nth-child(2n + 1) > .disc {
 }
 
 @media (max-width: 800px) {
+  nav > div {
+    font-size: 16px;
+    margin: 8px 10px;
+  }
+
+  nav a > span {
+    display: none;
+  }
+
+  .info {
+    /* flex-direction: column; */
+
+    grid-template-columns: minmax(1px, 700px);
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+
+    align-items: flex-start;
+    /* align-content: center; */
+  }
+
+  .info > img {
+    height: 150px;
+    width: 150px;
+    margin: 0;
+  }
+
+  .info > .discription {
+    margin: 0;
+    margin-top: 20px;
+  }
+
   .pj {
     flex-direction: column;
   }
@@ -127,4 +232,23 @@ main:nth-child(2n + 1) > .disc {
   .disc > h2 {
     border-bottom: 2px solid #589ffc;
   }
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #526069;
+}
+
+.footer > .date {
+  padding: 0 15px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.57142857;
+
+  /* font-size: 1.3em;
+  font-weight: 500;
+  line-height: 1.2; */
 }
