@@ -183,7 +183,7 @@ main:nth-child(2n + 1) > .disc {
 @media (max-width: 800px) {
   nav > div {
     font-size: 16px;
-    margin: 8px 10px;
+    margin: 8px 8px;
   }
 
   nav a > span {
