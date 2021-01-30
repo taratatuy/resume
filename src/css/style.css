@@ -20,6 +20,10 @@ main {
   font-family: 'SanFrancisco';
 }
 
+main img {
+  content-visibility: auto;
+}
+
 .header {
   height: 100vh;
   min-height: 550px;
@@ -30,7 +34,7 @@ main {
   color: #ffffff;
 
   position: relative;
-  background-image: url('../img/home.jpg');
+  background-image: url('../img/home.webp');
   background-position: center center;
   background-size: cover;
 }

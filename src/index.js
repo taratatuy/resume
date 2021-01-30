@@ -1,0 +1,11 @@
+import './css/hover.css';
+import './css/style.css';
+import './img/favicon.webp';
+import './img/avatar.webp';
+import './img/CanvasCircles3.webp';
+import './img/fuzzy.webp';
+import './img/github-favicon-dark.webp';
+import './img/InsertionSort.webp';
+import './img/mechanical-gears-2.webp';
+import './img/SplineInterpolation.webp';
+import './img/VueComponent.webp';
