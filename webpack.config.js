@@ -17,6 +17,11 @@ const optimization = () => {
   return config;
 };
 
+const outputPath = () => {
+  if (isDev) return path.resolve(__dirname, 'dist');
+  return path.resolve(__dirname, 'docs');
+};
+
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
@@ -24,7 +29,7 @@ module.exports = {
   },
   output: {
     filename: '[name].[hash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: outputPath(),
   },
   devServer: {
     port: 10270,
