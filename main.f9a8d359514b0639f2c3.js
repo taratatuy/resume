@@ -37,35 +37,11 @@
 /******/ 	})();
 /******/ 	
 /************************************************************************/
+var __webpack_exports__ = {};
 
 ;// CONCATENATED MODULE: ./img/favicon.webp
 /* harmony default export */ const favicon = (__webpack_require__.p + "img/favicon.webp");
-;// CONCATENATED MODULE: ./img/avatar.webp
-/* harmony default export */ const avatar = (__webpack_require__.p + "img/avatar.webp");
-;// CONCATENATED MODULE: ./img/CanvasCircles3.webp
-/* harmony default export */ const CanvasCircles3 = (__webpack_require__.p + "img/CanvasCircles3.webp");
-;// CONCATENATED MODULE: ./img/fuzzy.webp
-/* harmony default export */ const fuzzy = (__webpack_require__.p + "img/fuzzy.webp");
-;// CONCATENATED MODULE: ./img/github-favicon-dark.webp
-/* harmony default export */ const github_favicon_dark = (__webpack_require__.p + "img/github-favicon-dark.webp");
-;// CONCATENATED MODULE: ./img/InsertionSort.webp
-/* harmony default export */ const InsertionSort = (__webpack_require__.p + "img/InsertionSort.webp");
-;// CONCATENATED MODULE: ./img/mechanical-gears-2.webp
-/* harmony default export */ const mechanical_gears_2 = (__webpack_require__.p + "img/mechanical-gears-2.webp");
-;// CONCATENATED MODULE: ./img/SplineInterpolation.webp
-/* harmony default export */ const SplineInterpolation = (__webpack_require__.p + "img/SplineInterpolation.webp");
-;// CONCATENATED MODULE: ./img/VueComponent.webp
-/* harmony default export */ const VueComponent = (__webpack_require__.p + "img/VueComponent.webp");
-;// CONCATENATED MODULE: ./index.js
-
-
-
-
-
-
-
-
-
+;// CONCATENATED MODULE: ./script.js
 
 
 
