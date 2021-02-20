@@ -33,7 +33,12 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: './index.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'circle-animation.html',
+      template: './circle-animation.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[hash].css',

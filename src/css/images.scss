@@ -1,41 +1,34 @@
-.img-avatar {
+.img {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img_avatar {
   background-image: url('../img/avatar.webp');
   background-size: cover;
-  background-position: center;
 }
 
-.img-splineInterpolation {
+.img_splineInterpolation {
   background-image: url('../img/SplineInterpolation.webp');
-  background-size: contain;
-  background-position: center;
 }
 
-.img-FL {
+.img_FL {
   background-image: url('../img/fuzzy.webp');
-  background-size: contain;
-  background-position: center;
 }
 
-.img-insertionSort {
+.img_insertionSort {
   background-image: url('../img/InsertionSort.webp');
-  background-size: contain;
-  background-position: center;
 }
 
-.img-canvasCircles {
+.img_canvasCircles {
   background-image: url('../img/CanvasCircles3.webp');
-  background-size: contain;
-  background-position: center;
 }
 
-.img-vueComponent {
+.img_vueComponent {
   background-image: url('../img/VueComponent.webp');
-  background-size: contain;
-  background-position: center;
 }
 
-.img-backend {
+.img_backend {
   background-image: url('../img/mechanical-gears-2.webp');
-  background-size: contain;
-  background-position: center;
 }
