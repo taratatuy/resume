@@ -20,7 +20,7 @@ const optimization = () => {
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    main: './index.js',
+    main: './script.js',
   },
   output: {
     filename: '[name].[hash].js',
@@ -42,7 +42,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -51,6 +51,7 @@ module.exports = {
             },
           },
           'css-loader',
+          'sass-loader',
         ],
       },
       {
@@ -65,8 +66,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.ttf$/,
-        use: ['file-loader'],
+        test: /\.(woff|woff2)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              name: './font/[hash].[ext]',
+              mimetype: 'application/font-woff',
+            },
+          },
+        ],
       },
     ],
   },

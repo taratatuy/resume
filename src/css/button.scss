@@ -1,0 +1,27 @@
+.button {
+  font-size: 0.9em;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: $soft-blue;
+
+  min-width: 10em;
+  margin: 0.5em 1em 0;
+  padding: 0.2em 0.8em;
+
+  background-color: rgba($soft-blue, 0.07);
+  outline: 0;
+  border: 3px solid $soft-blue;
+  border-radius: 0.6em;
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: $soft-red;
+    border-color: $soft-red;
+    box-shadow: 0 0 0.2em 0.05em $soft-red;
+    background-color: rgba($soft-red, 0.07);
+  }
+}

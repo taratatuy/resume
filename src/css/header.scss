@@ -1,0 +1,38 @@
+.header {
+  background-image: url('../img/home.webp');
+  background-size: cover;
+  background-position: 50%;
+
+  height: 100vh;
+  min-height: 500px;
+  max-height: 2048px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .header_corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 1.15rem;
+    font-weight: 550;
+    color: $soft-white;
+
+    padding-top: 0.4em;
+    padding-right: 0.5em;
+
+    @media (min-width: $medium-screen) {
+      padding-right: 3em;
+      font-size: 1.2rem;
+    }
+  }
+
+  .header__panel {
+    margin-top: -1em;
+    max-width: 880px;
+  }
+}

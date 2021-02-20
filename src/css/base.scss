@@ -1,0 +1,31 @@
+$soft-white: hsl(0deg, 0%, 98%);
+$soft-black: hsl(0deg, 0%, 5%);
+$soft-blue: hsl(214deg, 96%, 67%);
+$soft-red: hsl(328deg, 93%, 63%);
+$border-color: hsl(195deg, 17%, 91%);
+$font-color: hsl(200deg 15% 15%);
+
+$medium-screen: 700px;
+
+:root {
+  box-sizing: border-box;
+
+  font-size: calc(0.95rem + 0.15vw);
+  font-family: 'San-Francisco';
+  line-height: 1.57;
+  color: $font-color;
+
+  @media (min-width: 1400px) {
+    font-size: 1.1rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
